@@ -1,6 +1,6 @@
 {-# OPTIONS -F -pgmF lisk #-}
-(module :fibs
-  (import :system.environment)
+(module fibs
+  (import system.environment)
 
   (:: main (:i-o ()))
   (= main (>>= get-args (. print fib read head)))
