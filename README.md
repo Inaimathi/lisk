@@ -5,7 +5,7 @@
 
 # General notes/brainstorming
 
-Ok, so first off, we want naive s-expression syntax for Haskell. We want it o that the translation is essentially
+Ok, so first off, we want naive s-expression syntax for Haskell. We want it so that the translation is essentially
 
     (a b c) ==> (a) b c
 
@@ -31,7 +31,7 @@ We could use clojure-style arglists
 
 	> data Foo = Foo Int Int
 
-Actually, we might want to go the whole nine and treat symbol-named functions as infix so that that last line of `fib` cn get translated as
+Actually, we might want to go the whole nine and treat symbol-named functions as infix so that that last line of `fib` can get translated as
 
 	(fib (n - 1)) + (fib (n - 2))
 
